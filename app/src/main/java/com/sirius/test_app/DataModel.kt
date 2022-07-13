@@ -1,8 +1,9 @@
 package com.sirius.test_app
 
 class DataModel(
-    val image: String = "https://ibb.co/37KzF03",
-    val logo: String = "https://ibb.co/GpbZg5t",
+
+    val image: String = "https://i.ibb.co/g3YVWD2/img-background.png",
+    val logo: String = "https://i.ibb.co/Pjf2B69/img-logo.png",
     val name: String = "DoTA 2",
     val rating: Float = 4.9f,
     val gradeCnt: String = "70M",
