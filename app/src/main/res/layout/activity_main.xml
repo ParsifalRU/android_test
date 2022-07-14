@@ -25,30 +25,30 @@
 
 
             <ImageView
-
                 android:id="@+id/imgv"
                 android:layout_width="628dp"
-                android:layout_height="296dp"
+                android:layout_height="324dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:foregroundGravity="center"
                 android:scaleType="centerCrop"
-                app:layout_constraintBottom_toBottomOf="parent"
+
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.548"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
+                android:textStyle="bold"
                 android:id="@+id/tv_title"
                 android:layout_width="76dp"
                 android:layout_height="26dp"
                 android:layout_marginStart="124dp"
                 android:layout_marginTop="308dp"
-                android:fontFamily="@font/sk_modernist"
+                android:fontFamily="@font/sk_modernist_norm"
                 android:lineHeight="26dp"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -61,22 +61,22 @@
             <androidx.cardview.widget.CardView
 
                 android:id="@+id/crdvw_out"
-                android:layout_width="87.13dp"
-                android:layout_height="87.13dp"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
                 android:layout_marginLeft="24dp"
-                android:layout_marginTop="274.93dp"
+                android:layout_marginTop="275dp"
                 android:foreground="@color/black_2"
-                app:cardCornerRadius="12.57dp"
+                app:cardCornerRadius="13.54dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
 
                 android:id="@+id/crdvw_out2"
-                android:layout_width="85.13dp"
-                android:layout_height="85.13dp"
-                android:layout_marginStart="24.93dp"
-                android:layout_marginTop="275.93dp"
+                android:layout_width="84.13dp"
+                android:layout_height="84.13dp"
+                android:layout_marginStart="25.93dp"
+                android:layout_marginTop="276.93dp"
                 android:foreground="@color/black"
                 app:cardCornerRadius="12.57dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
                 android:layout_width="54dp"
                 android:layout_height="54dp"
                 android:layout_marginStart="41dp"
-                android:layout_marginTop="290.93dp"
+                android:layout_marginTop="291dp"
                 android:background="@color/black"
                 app:cardCornerRadius="12.57dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -129,16 +129,14 @@
                 android:id="@+id/tv70"
                 android:layout_width="26dp"
                 android:layout_height="14dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="340dp"
-
-                android:fontFamily="@font/sk_modernist"
+                android:fontFamily="@font/sk_modernist_norm"
                 android:textColor="@color/grey"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                app:layout_constraintHorizontal_bias="0.490"
                 app:layout_constraintLeft_toRightOf="@+id/rtb"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
             <androidx.cardview.widget.CardView
 
@@ -150,7 +148,6 @@
 
                 app:cardBackgroundColor="@color/blue"
                 app:cardCornerRadius="12dp"
-                app:layout_constraintBottom_toBottomOf="parent"
 
                 app:layout_constraintHorizontal_bias="0.092"
                 app:layout_constraintStart_toStartOf="parent"
@@ -158,7 +155,7 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
-
+                    android:fontFamily="@font/monserat"
                     android:id="@+id/tv_moba"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -186,6 +183,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/crdvw_out">
 
                 <TextView
+                    android:fontFamily="@font/monserat"
                     android:id="@+id/tv_multip"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -206,14 +204,13 @@
                 android:layout_marginRight="132dp"
                 app:cardBackgroundColor="@color/blue"
                 app:cardCornerRadius="12dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toEndOf="@+id/card_strat"
                 app:layout_constraintTop_toBottomOf="@+id/crdvw_out"
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
+                    android:fontFamily="@font/monserat"
                     android:id="@+id/tv_strat"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -225,22 +222,111 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
+
                 android:id="@+id/tv_description"
                 android:layout_width="327dp"
                 android:layout_height="76dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="28dp"
-                android:fontFamily="@font/sk_modernist"
+                android:fontFamily="@font/sk_modernist_norm"
                 android:gravity="top"
-                android:lineHeight="19dp"
-                android:lineSpacingExtra="5sp"
                 android:textColor="@color/no_white"
                 android:textSize="12sp"
-                android:translationY="-2.3sp"
 
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/card_strat" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/sk_modernist_norm"
+                android:id="@+id/tv_review"
+                android:textColor="@color/review"
+                android:textSize="16sp"
+                android:letterSpacing="0.04"
+                android:layout_marginStart="24dp"
+                android:layout_width="137dp"
+                android:layout_height="19dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+            <TextView
+                android:gravity="bottom"
+                android:letterSpacing="0.04"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="43sp"
+                android:fontFamily="@font/sk_modernist_norm"
+                android:id="@+id/tv_big_numb"
+                android:layout_width="69dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintHorizontal_bias="0.277"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_review" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rtb_2"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="78dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="29dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_review" />
+
+            <TextView
+                android:textColor="@color/more_white"
+                android:id="@+id/tv_numb_rev"
+                android:layout_width="76dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sk_modernist_norm"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/tv_big_numb"
+                app:layout_constraintTop_toBottomOf="@+id/rtb_2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="327dp"
+                android:layout_height="252dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_numb_rev" />
+
+            <com.google.android.material.button.MaterialButton
+
+                android:letterSpacing="0.03"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sk_modernist_norm"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                app:cornerRadius="12sp"
+                android:id="@+id/btn"
+                android:layout_marginStart="24dp"
+                android:layout_width="327dp"
+                android:layout_height="64dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgv"
+                ></Button>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

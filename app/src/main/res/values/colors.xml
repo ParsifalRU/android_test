@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="yel_more">#F4D144</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -13,4 +14,8 @@
     <color name="blue">#3D44A9F4</color>
     <color name="no_white">#B3EEF2FB</color>
     <color name="blue_blue">#41A0E7</color>
+    <color name="review">#EEF2FB</color>
+    <color name="more_white">#A8ADB7</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="last">#A8ADB7</color>
 </resources>

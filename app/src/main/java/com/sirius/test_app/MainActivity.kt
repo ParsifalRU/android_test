@@ -1,41 +1,39 @@
 package com.sirius.test_app
 
-import android.media.Image
-import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
+import android.widget.Button
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.RatingBar
 import android.widget.TextView
-import androidx.cardview.widget.CardView
-import com.android.volley.toolbox.ImageLoader
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-import org.w3c.dom.Text
+import rvadapter.CommentAdapter
 
 
 class MainActivity : AppCompatActivity() {
 
     val dm = DataModel()
-
+    val adapter = CommentAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        recview()
 
         loadImage()
 
-        g()
+        loadlogo()
+
+        bars()
 
         settv()
 
         setrtb()
 
-        loadlogo()
+        setbtn()
     }
 
     fun loadImage() {
@@ -45,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             .placeholder(R.drawable.ic_baseline_data_usage_24)
             .error(R.drawable.ic_launcher_foreground)
             .into(imgv_dota)
-
 
     }
 
@@ -59,7 +56,7 @@ class MainActivity : AppCompatActivity() {
             .into(imgv_logo)
     }
 
-    fun g(){
+    fun bars(){
         supportActionBar?.hide()
         actionBar?.hide()
     }
@@ -82,11 +79,40 @@ class MainActivity : AppCompatActivity() {
 
         val tv_description = findViewById<TextView>(R.id.tv_description)
         tv_description.text = dm.description
+
+        val tv_review = findViewById<TextView>(R.id.tv_review)
+        tv_review.text = dm.rev_rat
+
+        val tv_numb_rev = findViewById<TextView>(R.id.tv_numb_rev)
+        tv_numb_rev.text = dm.gradeCnt + " " + dm.rev_rat.removeRange(6..15) + "s"
+
+        val tv_big_numb = findViewById<TextView>(R.id.tv_big_numb)
+        tv_big_numb.text = dm.rating.toString()
+
+
     }
 
     fun setrtb(){
         val rtb = findViewById<RatingBar>(R.id.rtb)
         rtb.rating = dm.rating
+
+        val rtb_2 = findViewById<RatingBar>(R.id.rtb_2)
+        rtb_2.rating = dm.rating
+    }
+
+    fun setbtn(){
+        val btn = findViewById<Button>(R.id.btn)
+        btn.setBackgroundColor(resources.getColor(R.color.yel_more))
+        btn.text = dm.action.name
+
+        val btn_back = findViewById<Button>(R.id.btn_back)
+        btn_back.setBackgroundColor(resources(R.drawable.i))
+    }
+
+    fun recview(){
+        val rvw = findViewById<RecyclerView>(R.id.recyclerView)
+        rvw.layoutManager = LinearLayoutManager(this@MainActivity)
+        rvw.adapter = adapter
     }
 
 }

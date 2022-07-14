@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="left"
+        android:textSize="16sp"
+        android:fontFamily="@font/sk_modernist_norm"
+        android:textColor="@color/white"
+        android:id="@+id/tv_rec1"
+        android:layout_width="114dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imgv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="left"
+        android:textSize="12sp"
+        android:fontFamily="@font/sk_modernist_norm"
+        android:textColor="@color/white40"
+        android:id="@+id/tv_rec2"
+        android:layout_width="102dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toEndOf="@+id/imgv"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rec1" />
+
+    <TextView
+        android:letterSpacing="0.04"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:fontFamily="@font/sk_modernist_norm"
+        android:textColor="@color/last"
+        android:id="@+id/tv_rec3"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rec2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
