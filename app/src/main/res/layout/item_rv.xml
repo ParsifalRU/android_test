@@ -3,41 +3,58 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imgv"
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="10dp"
+        android:id="@+id/crdvw_4"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        app:cardCornerRadius="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:foregroundGravity="center"
+            android:scaleType="centerCrop"
+            android:id="@+id/imgv"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
-        android:gravity="left"
-        android:textSize="16sp"
-        android:fontFamily="@font/sk_modernist_norm"
-        android:textColor="@color/white"
         android:id="@+id/tv_rec1"
-        android:layout_width="114dp"
-        android:layout_height="19dp"
-        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/imgv"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/sk_modernist_norm"
+        android:gravity="left"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toEndOf="@+id/crdvw_4"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:gravity="left"
-        android:textSize="12sp"
-        android:fontFamily="@font/sk_modernist_norm"
-        android:textColor="@color/white40"
         android:id="@+id/tv_rec2"
-        android:layout_width="102dp"
-        android:layout_height="14dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        app:layout_constraintStart_toEndOf="@+id/imgv"
+        android:fontFamily="@font/sk_modernist_norm"
+        android:layout_marginStart="52dp"
+        android:gravity="left"
+        android:textColor="@color/white40"
+        android:textSize="12sp"
+
+        app:layout_constraintStart_toEndOf="@+id/crdvw_4"
         app:layout_constraintTop_toBottomOf="@+id/tv_rec1" />
 
     <TextView
@@ -47,8 +64,8 @@
         android:fontFamily="@font/sk_modernist_norm"
         android:textColor="@color/last"
         android:id="@+id/tv_rec3"
-        android:layout_width="327dp"
-        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_rec2" />

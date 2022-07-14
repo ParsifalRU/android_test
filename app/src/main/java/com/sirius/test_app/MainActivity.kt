@@ -1,15 +1,15 @@
 package com.sirius.test_app
 
+
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.RatingBar
-import android.widget.TextView
+import android.view.View
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import rvadapter.CommentAdapter
+import java.time.temporal.TemporalAdjusters.previous
 
 
 class MainActivity : AppCompatActivity() {
@@ -105,8 +105,6 @@ class MainActivity : AppCompatActivity() {
         btn.setBackgroundColor(resources.getColor(R.color.yel_more))
         btn.text = dm.action.name
 
-        val btn_back = findViewById<Button>(R.id.btn_back)
-        btn_back.setBackgroundColor(resources(R.drawable.i))
     }
 
     fun recview(){

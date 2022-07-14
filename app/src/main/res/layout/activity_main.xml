@@ -26,8 +26,8 @@
 
             <ImageView
                 android:id="@+id/imgv"
-                android:layout_width="628dp"
-                android:layout_height="324dp"
+                android:layout_width="match_parent"
+                android:layout_height="289dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -38,14 +38,14 @@
                 app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:textStyle="bold"
                 android:id="@+id/tv_title"
-                android:layout_width="76dp"
-                android:layout_height="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
                 android:layout_marginStart="124dp"
                 android:layout_marginTop="308dp"
                 android:fontFamily="@font/sk_modernist_norm"
@@ -224,10 +224,11 @@
             <TextView
 
                 android:id="@+id/tv_description"
-                android:layout_width="327dp"
-                android:layout_height="76dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="28dp"
+                android:layout_marginEnd="24dp"
                 android:fontFamily="@font/sk_modernist_norm"
                 android:gravity="top"
                 android:textColor="@color/no_white"
@@ -294,10 +295,11 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
-                android:layout_width="327dp"
+                android:layout_width="match_parent"
                 android:layout_height="252dp"
-                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="15dp"
+                android:layout_marginEnd="24dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_numb_rev" />
 
@@ -311,21 +313,83 @@
                 android:textAllCaps="false"
                 app:cornerRadius="12sp"
                 android:id="@+id/btn"
+                android:layout_marginBottom="36dp"
                 android:layout_marginStart="24dp"
-                android:layout_width="327dp"
+                android:layout_marginEnd="24dp"
+                android:layout_width="match_parent"
                 android:layout_height="64dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
+
+
                 android:id="@+id/btn_back"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:layout_marginStart="28dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="56dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imgv"
-                ></Button>
+                android:background="?android:attr/selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="16dp"
+
+                android:layout_height="16dp"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+                app:layout_constraintEnd_toEndOf="@+id/btn_back"
+                app:layout_constraintStart_toStartOf="@+id/btn_back"
+                app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+                app:layout_constraintEnd_toEndOf="@+id/btn_back"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/btn_3dots"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="56dp"
+                android:background="?android:attr/selectableItemBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="24dp"
+
+                app:layout_constraintTop_toTopOf="@+id/imgv" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="56dp"
+                android:src="@drawable/ic_baseline_brightness_1_24"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_3dots"
+                app:layout_constraintEnd_toEndOf="@+id/btn_3dots"
+                app:layout_constraintHorizontal_bias="1.0"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="72dp"
+                android:rotation="90"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_3dots"
+                app:layout_constraintTop_toTopOf="@+id/imgv" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
