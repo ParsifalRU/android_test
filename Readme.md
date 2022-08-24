@@ -1,3 +1,11 @@
+Result:
+-
+<img align="center" src="https://user-images.githubusercontent.com/109204462/186505485-db84ad12-5ad4-4fc5-898e-8b8b3582532c.png" height="500" /></a>
+
+<img align="center" src="https://user-images.githubusercontent.com/109204462/186505711-2aa909f2-97d8-4c9a-ba55-b732d2bd1ed3.png" height="500" /></a>
+
+Test:
+-
 #### Привет!
  
 Чтобы проверить твои навыки и умения в android, мы подготовили для тебя задание:
